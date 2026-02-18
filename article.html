@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статья: Как оттенки управляют настроением | Colors&Emotions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-content {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--secondary);
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .article-content h2 {
+            color: var(--accent);
+            margin: 2rem 0 1rem;
+            font-size: 1.9rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 1rem;
+        }
+        .article-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+        .article-content blockquote {
+            background: rgba(41, 128, 185, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 0 12px 12px 0;
+            color: #2c3e50;
+        }
+        .article-content ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        .article-content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+        .article-content .highlight {
+            background: linear-gradient(120deg, rgba(192,192,192,0.2) 0%, rgba(192,192,192,0.1) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px dashed var(--primary);
+        }
+        .color-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .color-item {
+            background: #f8f9fa;
+            padding: 1.2rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        .color-item.red { border-color: #E74C3C; }
+        .color-item.yellow { border-color: #F1C40F; }
+        .color-item.blue { border-color: #3498DB; }
+        .color-item.green { border-color: #2ECC71; }
+        .color-item.black { border-color: #2C3E50; }
+        .color-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .article-content {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                    Colors&Emotions
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Главная</a></li>
+                    <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                    <li><a href="index.html#goethe">Теория Гёте</a></li>
+                    <li><a href="index.html#test">Тест</a></li>
+                    <li><a href="culture.html">Культура цвета</a></li>
+                    <li><a href="article.html">Статья</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="index.html#creators">Создатели</a></li>
+                    <li><a href="index.html#tips">Советы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <h1>Как оттенки управляют нашим настроением</h1>
+            <p>Мы редко задумываемся о силе цвета, хотя наука располагает данными исследований уже более века. Цвет способен менять наше восприятие реальности, влиять на решения и даже ощущение вкуса.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="article-content">
+                <p>Долгое время цвет считали только физическим явлением. Переворот совершил Гёте, разделив цвета на «плюс» (теплые, возбуждающие) и «минус» (холодные, успокаивающие). Эксперименты подтвердили: один и тот же кофе воспринимается по-разному в зависимости от цвета упаковки — слабым рядом с желтым, крепким рядом с красным. Мозг достраивает реальность на основе ассоциаций.</p>
+
+                <h2>Палитра чувств</h2>
+                <div class="color-list">
+                    <div class="color-item red">
+                        <h4>Красный</h4>
+                        <p>Физиологически активный цвет. Повышает напряжение, привлекает внимание, но может провоцировать агрессию и бессонницу в спальне.</p>
+                    </div>
+                    <div class="color-item yellow">
+                        <h4>Жёлтый</h4>
+                        <p>Бодрит без агрессии, стимулирует интеллект и память. Идеален для учебных зон.</p>
+                    </div>
+                    <div class="color-item blue">
+                        <h4>Синий и голубой</h4>
+                        <p>Успокаивают, снижают тревожность, подавляют аппетит. Но избыток темно-синего может усиливать чувство одиночества.</p>
+                    </div>
+                    <div class="color-item green">
+                        <h4>Зелёный</h4>
+                        <p>Снимает стресс, гармонизирует состояние. Положительно влияет на зрение.</p>
+                    </div>
+                    <div class="color-item black">
+                        <h4>Чёрный, белый, серый</h4>
+                        <p>Чёрный символизирует власть, но устойчиво ассоциируется с негативом; белый — чистоту, но в избытке вызывает тревогу; серый — нейтральность.</p>
+                    </div>
+                </div>
+
+                <h2>Тон, яркость, насыщенность</h2>
+                <p>Важно не только название цвета. Исследования <strong>2025 года</strong> подтверждают:</p>
+                <ul>
+                    <li><strong>Светлые тона</strong> — положительные эмоции, легкость.</li>
+                    <li><strong>Тёмные тона</strong> — негатив, тяжесть, печаль.</li>
+                    <li><strong>Насыщенность</strong> усиливает интенсивность эмоции: яркий красный — ярость, бледный — слабый гнев.</li>
+                </ul>
+
+                <h2>Культурные особенности</h2>
+                <p>Универсальные реакции (красный = опасность, чёрный = страх) работают везде. Но «приобретённые» эмоции (зависть, ревность) имеют разные цветовые ассоциации в разных культурах. Дети до 4 лет раскрашивают любимыми цветами, в 5–7 лет предпочитают яркие контрасты, и лишь взрослые понимают сложные оттенки.</p>
+
+                <blockquote>
+                    <i class="fas fa-quote-left" style="color: var(--primary); opacity: 0.5; margin-right: 10px;"></i>
+                    Цвет - доступный инструмент саморегуляции. Не хватает энергии? Добавьте красный или жёлтый. Нужен отдых? Окружите себя зелёным, голубым, пастелью.
+                </blockquote>
+
+                <p>Цвет работает независимо от нашего осознания. Изучая его, мы учимся понимать себя.</p>
+
+                <p style="margin-top: 2rem;">Подробнее о вкладе Гёте в науку о цвете читайте в разделе <a href="index.html#goethe" style="color: var(--primary); font-weight: 600;">«Теория Гёте»</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colors&Emotions</h3>
+                    <p>Исследуем глубокую связь между цветами и человеческими эмоциями.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Страницы</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                        <li><a href="index.html#goethe">Теория Гёте</a></li>
+                        <li><a href="index.html#test">Пройти тест</a></li>
+                        <li><a href="culture.html">Культура цвета</a></li>
+                        <li><a href="article.html">Статья</a></li>
+                        <li><a href="contact.html">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE_%D1%86%D0%B2%D0%B5%D1%82%D0%B5" target="_blank">Книга Гёте</a></li>
+                        <li><a href="https://www.verywellmind.com/color-psychology-2795824" target="_blank">Основы цветопсихологии</a></li>
+                        <li><a href="https://www.color-meanings.com/" target="_blank">Значения цветов</a></li>
+                        <li><a href="https://quizlet.com/" target="_blank">Платформа Quizlet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Colors&Emotions. Все права защищены.</p>
+                <p>Создатели: Андрей Минаев, Софья Бурханова</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

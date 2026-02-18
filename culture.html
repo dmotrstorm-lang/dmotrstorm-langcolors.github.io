@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культура цвета | Colors&Emotions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .artist-name {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                    Colors&Emotions
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Главная</a></li>
+                    <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                    <li><a href="index.html#goethe">Теория Гёте</a></li>
+                    <li><a href="index.html#test">Тест</a></li>
+                    <li><a href="culture.html">Культура цвета</a></li>
+                    <li><a href="article.html">Статья</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="index.html#creators">Создатели</a></li>
+                    <li><a href="index.html#tips">Советы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <h1>Цвет в мировой культуре и искусстве</h1>
+            <p>Откройте, как величайшие художники использовали палитру для передачи чувств и как значение цвета менялось от эпохи к эпохе и от культуры к культуре.</p>
+        </div>
+    </section>
+
+    <section id="artists">
+        <div class="container">
+            <h2 class="section-title">Художники, говорящие на языке цвета</h2>
+            <p class="section-subtitle">Цвет — это не просто элемент композиции, а полноценный язык, на котором говорят великие мастера. Узнайте, как они использовали цвет для передачи глубоких эмоций.</p>
+            
+            <div class="colors-grid">
+                <!-- Василий Кандинский -->
+                <div class="color-card">
+                    <div class="color-sample" style="background: linear-gradient(45deg, #0d47a1, #2196f3);">
+                        <div class="artist-name">Василий Кандинский</div>
+                    </div>
+                    <div class="color-info">
+                        <h3>Василий Кандинский</h3>
+                        <p>Пионер абстрактного искусства. Считал, что цвет обладает собственной «духовной» силой и способен вызывать эмоции так же, как музыка. Связывал синий цвет с духовностью и бесконечностью.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Абстракция</span>
+                            <span class="emotion-tag">Синестезия</span>
+                            <span class="emotion-tag">Духовность</span>
+                        </div>
+                        <!-- ССЫЛКА НА КАРТИНУ (можно заменить) -->
+                        <a href="https://ru.wikipedia.org/wiki/Композиция_VII" class="book-link" style="margin-top:1rem;" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> «Композиция VII», 1913
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Марк Ротко -->
+                <div class="color-card">
+                    <div class="color-sample" style="background: linear-gradient(45deg, #8e0000, #b71c1c);">
+                        <div class="artist-name">Марк Ротко</div>
+                    </div>
+                    <div class="color-info">
+                        <h3>Марк Ротко</h3>
+                        <p>Мастер «цветового поля». Создавал огромные полотна, чтобы погрузить зрителя в созерцание. Его цель — выразить базовые человеческие эмоции через вибрацию и глубину цвета.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Медитация</span>
+                            <span class="emotion-tag">Возвышенное</span>
+                            <span class="emotion-tag">Эмоциональное поле</span>
+                        </div>
+                        <a href="https://ru.wikipedia.org/wiki/Белое_центре_(жёлтое,_розовое_и_лиловое_на_розовом)" class="book-link" style="margin-top:1rem;" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> «Белое центр», 1950
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Йозеф Альберс -->
+                <div class="color-card">
+                    <div class="color-sample" style="background: linear-gradient(45deg, #ff9800, #ff5722);">
+                        <div class="artist-name">Йозеф Альберс</div>
+                    </div>
+                    <div class="color-info">
+                        <h3>Йозеф Альберс</h3>
+                        <p>Автор знаменитой серии «Поклонение квадрату». Изучал, как цвет изменяется в зависимости от окружения, демонстрируя относительность цветовосприятия.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Исследование</span>
+                            <span class="emotion-tag">Относительность</span>
+                            <span class="emotion-tag">Геометрия</span>
+                        </div>
+                        <a href="https://ru.wikipedia.org/wiki/Поклонение_квадрату" class="book-link" style="margin-top:1rem;" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Серия «Поклонение квадрату»
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- История цвета -->
+    <section class="goethe-section" id="history">
+        <div class="container">
+            <h2 class="section-title">Цвет в истории и традициях</h2>
+            <div class="goethe-content">
+                <div class="goethe-img">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Историческая палитра">
+                </div>
+                <div class="goethe-text">
+                    <h3>Символика, меняющаяся во времени и пространстве</h3>
+                    <p><strong>Белый</strong> на Западе — символ чистоты и свадьбы, в Китае и Японии — цвет траура и скорби.</p>
+                    <p><strong>Красный</strong> в Китае означает удачу и праздник, в западном контексте — опасность, страсть и энергию.</p>
+                    <p><strong>Фиолетовый</strong> в Древнем Риме был знаком императорской власти из-за дороговизны красителя. В средневековой Европе стал символом духовности и покаяния.</p>
+                    <p><strong>Синий</strong> в средневековой Европе ассоциировался с Девой Марией, а в Древнем Египте был цветом божественности и защиты.</p>
+                    <p>Этот диалог между универсальной биологической реакцией на цвет и усвоенным культурным значением создаёт богатую палитру человеческих эмоций.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colors&Emotions</h3>
+                    <p>Исследуем глубокую связь между цветами и человеческими эмоциями в искусстве и культуре.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Страницы</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                        <li><a href="index.html#goethe">Теория Гёте</a></li>
+                        <li><a href="index.html#test">Пройти тест</a></li>
+                        <li><a href="culture.html">Культура цвета</a></li>
+                        <li><a href="article.html">Статья</a></li>
+                        <li><a href="contact.html">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://ru.wikipedia.org/wiki/Психология_восприятия_цвета" target="_blank">Психология цвета</a></li>
+                        <li><a href="https://www.tate.org.uk/art" target="_blank">Галерея Тейт</a></li>
+                        <li><a href="https://www.moma.org/" target="_blank">Музей МоМА</a></li>
+                        <li><a href="https://www.color-meanings.com/" target="_blank">Значения цветов</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Colors&Emotions. Все права защищены. | Сайт создан для изучения психологии цвета</p>
+                <p>Создатели: Андрей Минаев (разработка) и Софья Бурханова (цветокоррекция и психология цвета)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

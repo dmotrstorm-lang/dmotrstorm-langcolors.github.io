@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors&Emotions - Как цвет влияет на эмоции</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                    Colors&Emotions
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#colors">Цвета и эмоции</a></li>
+                    <li><a href="#goethe">Теория Гёте</a></li>
+                    <li><a href="#test">Пройти тест</a></li>
+                    <li><a href="culture.html">Культура цвета</a></li>
+                    <li><a href="article.html">Статья</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="#creators">Создатели</a></li>
+                    <li><a href="#tips">Практические советы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Как цвет влияет на наши эмоции</h1>
+            <p>Откройте для себя удивительную связь между цветами и нашим психологическим состоянием. Узнайте, как разные оттенки могут изменять настроение, восприятие и поведение человека.</p>
+            <a href="#colors" class="cta-button">Исследовать цвета</a>
+        </div>
+    </section>
+
+    <!-- Цвета и эмоции -->
+    <section id="colors">
+        <div class="container">
+            <h2 class="section-title">Цвета и их эмоциональное воздействие</h2>
+            <p class="section-subtitle">Каждый цвет обладает уникальной энергией и способен вызывать определенные эмоции и ассоциации. Исследуйте наиболее распространенные реакции на основные цвета.</p>
+            
+            <div class="colors-grid">
+                <!-- Красный -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #E74C3C;"></div>
+                    <div class="color-info">
+                        <h3>Красный</h3>
+                        <p>Самый эмоционально интенсивный цвет. Повышает кровяное давление, ускоряет дыхание и метаболизм.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Страсть</span>
+                            <span class="emotion-tag">Энергия</span>
+                            <span class="emotion-tag">Опасность</span>
+                            <span class="emotion-tag">Сила</span>
+                            <span class="emotion-tag">Любовь</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Синий -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #3498DB;"></div>
+                    <div class="color-info">
+                        <h3>Синий</h3>
+                        <p>Цвет неба и моря. Противоположен красному по воздействию — успокаивает организм, снижает кровяное давление.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Спокойствие</span>
+                            <span class="emotion-tag">Надёжность</span>
+                            <span class="emotion-tag">Умиротворение</span>
+                            <span class="emotion-tag">Верность</span>
+                            <span class="emotion-tag">Стабильность</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Желтый -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #F1C40F;"></div>
+                    <div class="color-info">
+                        <h3>Желтый</h3>
+                        <p>Цвет солнца. Стимулирует мозговую деятельность, привлекает внимание, но в больших количествах может вызывать напряжение.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Оптимизм</span>
+                            <span class="emotion-tag">Творчество</span>
+                            <span class="emotion-tag">Радость</span>
+                            <span class="emotion-tag">Теплота</span>
+                            <span class="emotion-tag">Энергия</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Зеленый -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #2ECC71;"></div>
+                    <div class="color-info">
+                        <h3>Зелёный</h3>
+                        <p>Цвет природы и роста. Самый успокаивающий для человеческого глаза, способствует релаксации и восстановлению.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Гармония</span>
+                            <span class="emotion-tag">Рост</span>
+                            <span class="emotion-tag">Обновление</span>
+                            <span class="emotion-tag">Безопасность</span>
+                            <span class="emotion-tag">Здоровье</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фиолетовый -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #9B59B6;"></div>
+                    <div class="color-info">
+                        <h3>Фиолетовый</h3>
+                        <p>Сочетает стабильность синего и энергию красного. Исторически ассоциируется с королевской властью и духовностью.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Роскошь</span>
+                            <span class="emotion-tag">Тайна</span>
+                            <span class="emotion-tag">Творчество</span>
+                            <span class="emotion-tag">Духовность</span>
+                            <span class="emotion-tag">Мудрость</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Оранжевый -->
+                <div class="color-card">
+                    <div class="color-sample" style="background-color: #E67E22;"></div>
+                    <div class="color-info">
+                        <h3>Оранжевый</h3>
+                        <p>Сочетает энергию красного и радость желтого. Вызывает чувство тепла, энтузиазма и привлекает внимание.</p>
+                        <div class="color-emotions">
+                            <span class="emotion-tag">Энтузиазм</span>
+                            <span class="emotion-tag">Теплота</span>
+                            <span class="emotion-tag">Дружелюбие</span>
+                            <span class="emotion-tag">Уверенность</span>
+                            <span class="emotion-tag">Успех</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Теория Гёте -->
+    <section class="goethe-section" id="goethe">
+        <div class="container">
+            <h2 class="section-title">Иоганн Вольфганг фон Гёте о цвете</h2>
+            
+            <div class="goethe-content">
+                <div class="goethe-img">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=1058&q=80" alt="Книга Гёте и цвета">
+                </div>
+                <div class="goethe-text">
+                    <h3>Учение о цвете (1810)</h3>
+                    <p>Немецкий поэт и мыслитель Иоганн Вольфганг фон Гёте в своем труде «Zur Farbenlehre» (Учение о цвете) исследовал не только физическую природу цвета, но и его физиологическое и психологическое воздействие на человека.</p>
+                    <p>Гёте разделил цвета на «плюс» и «минус» группы. К «плюс»-цветам (желтый, красно-желтый, желто-красный) он относил те, что вызывают бодрое, оживленное настроение. К «минус»-цветам (синий, красно-синий, сине-красный) — те, что создают беспокойное, мягкое и тоскливое настроение.</p>
+                    <p>Его работа стала одним из первых систематических исследований связи цвета и эмоций, предвосхитив современную цветопсихологию.</p>
+                    <!-- ССЫЛКА НА КНИГУ ГЁТЕ (можно заменить на свою) -->
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE_%D1%86%D0%B2%D0%B5%D1%82%D0%B5" class="book-link" target="_blank">
+                        <i class="fas fa-book-open"></i> Узнать больше о книге Гёте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тест -->
+    <section class="test-section" id="test">
+        <div class="container">
+            <h2 class="section-title">Пройдите тест на цветовосприятие</h2>
+            
+            <div class="test-card">
+                <h3>Какой цвет соответствует вашей личности?</h3>
+                <p>Пройдите наш интерактивный тест, чтобы определить, как цвета влияют именно на вас. Узнайте, какие цвета лучше всего отражают вашу личность и текущее эмоциональное состояние.</p>
+                <p>Тест включает в себя вопросы о ваших предпочтениях, реакциях на различные ситуации и ассоциациях с цветами. Результаты помогут вам лучше понять себя и использовать цвета осознанно в повседневной жизни.</p>
+                
+                <!-- ССЫЛКА НА ТЕСТ QUIZLET (замените на свою) -->
+                <a href="https://quizlet.com/1130846217/match?i=5o79f7&x=1KqY&sc=qvd" class="test-button" target="_blank">
+                    <i class="fas fa-play-circle"></i> Начать тест на Quizlet
+                </a>
+                
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">Если ссылка не работает, проверьте правильность адреса или поищите аналогичный тест на платформе Quizlet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Создатели сайта -->
+    <section class="creators-section" id="creators">
+        <div class="container">
+            <h2 class="section-title">Создатели сайта</h2>
+            <p class="section-subtitle">Этот проект был создан командой энтузиастов, которые объединили свои навыки для изучения увлекательной связи между цветами и эмоциями.</p>
+            
+            <div class="creators-grid">
+                <!-- Андрей Минаев -->
+                <div class="creator-card">
+                    <div class="creator-photo">
+                        <!-- ЗАМЕНИТЕ НА ФОТО АНДРЕЯ: <img src="images/andrey.jpg" alt="Андрей Минаев"> -->
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="creator-info">
+                        <h3>Андрей Минаев</h3>
+                        <span class="creator-role">Разработчик и дизайнер сайта</span>
+                        <p>Андрей придумал концепцию сайта и полностью реализовал его техническую часть. Он отвечал за структуру, программирование, верстку и общий дизайн проекта. Его целью было создать интуитивно понятный и визуально привлекательный ресурс, который бы доступно представлял сложную тему психологии цвета.</p>
+                    </div>
+                </div>
+                
+                <!-- Софья Бурханова -->
+                <div class="creator-card">
+                    <div class="creator-photo">
+                        <!-- ЗАМЕНИТЕ НА ФОТО СОФЬИ: <img src="images/sofia.jpg" alt="Софья Бурханова"> -->
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="creator-info">
+                        <h3>Софья Бурханова</h3>
+                        <span class="creator-role">Специалист по цветокоррекции и психологии цвета</span>
+                        <p>Софья занималась подбором цветовой палитры для сайта и анализом эмоционального воздействия различных оттенков. Она исследовала научные работы по цветопсихологии, включая труд Гёте, и адаптировала эту информацию для представления на сайте. Ее вклад обеспечил точность и глубину представленных материалов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Практические советы -->
+    <section id="tips">
+        <div class="container">
+            <h2 class="section-title">Практическое применение цветопсихологии</h2>
+            <p class="section-subtitle">Узнайте, как использовать знания о цветах и эмоциях в повседневной жизни, дизайне интерьера, одежде и рабочем пространстве.</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4>Для интерьера</h4>
+                    <p>Используйте синие и зеленые оттенки в спальне для спокойствия, желтые и оранжевые — в кухне и столовой для создания теплой атмосферы, красные акценты — в гостиной для энергии.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h4>Для одежды</h4>
+                    <p>Носите синее на важных встречах для создания образа надежности, красное для уверенности и привлечения внимания, зеленое для гармонии и баланса в стрессовых ситуациях.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Для рабочего пространства</h4>
+                    <p>Синий повышает продуктивность и концентрацию, желтый стимулирует творчество и оптимизм, зеленый снижает усталость глаз и создает ощущение баланса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colors&Emotions</h3>
+                    <p>Исследуем глубокую связь между цветами и человеческими эмоциями. Наша миссия — помочь людям осознанно использовать цвета для улучшения качества жизни.</p>
+                    <div class="social-icons">
+                        <!-- ЗАМЕНИТЕ НА СВОИ СОЦСЕТИ -->
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Страницы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#colors">Цвета и эмоции</a></li>
+                        <li><a href="#goethe">Теория Гёте</a></li>
+                        <li><a href="#test">Пройти тест</a></li>
+                        <li><a href="culture.html">Культура цвета</a></li>
+                        <li><a href="article.html">Статья</a></li>
+                        <li><a href="contact.html">Обратная связь</a></li>
+                        <li><a href="#creators">Создатели</a></li>
+                        <li><a href="#tips">Практические советы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE_%D1%86%D0%B2%D0%B5%D1%82%D0%B5" target="_blank">Книга Гёте</a></li>
+                        <li><a href="https://www.verywellmind.com/color-psychology-2795824" target="_blank">Основы цветопсихологии</a></li>
+                        <li><a href="https://www.color-meanings.com/" target="_blank">Значения цветов</a></li>
+                        <li><a href="https://quizlet.com/" target="_blank">Платформа Quizlet</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Colors&Emotions. Все права защищены. | Сайт создан для изучения психологии цвета</p>
+                <p style="margin-top: 5px;">Создатели: Андрей Минаев (разработка) и Софья Бурханова (цветокоррекция и психология цвета)</p>
+                <p style="margin-top: 5px;">Информация предоставлена в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Анимация при прокрутке
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.color-card, .tip-card, .creator-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

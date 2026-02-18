@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь | Colors&Emotions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--secondary);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.2);
+        }
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: block;
+            width: 100%;
+            border: 2px solid var(--secondary);
+        }
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(41, 128, 185, 0.3);
+        }
+        .contact-info {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .contact-method {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            border: 1px solid rgba(192, 192, 192, 0.3);
+        }
+        .contact-method i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                    Colors&Emotions
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Главная</a></li>
+                    <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                    <li><a href="index.html#goethe">Теория Гёте</a></li>
+                    <li><a href="index.html#test">Тест</a></li>
+                    <li><a href="culture.html">Культура цвета</a></li>
+                    <li><a href="article.html">Статья</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="index.html#creators">Создатели</a></li>
+                    <li><a href="index.html#tips">Советы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <p>У вас есть вопросы о психологии цвета, предложения по сотрудничеству или вы хотите поделиться своей историей? Мы будем рады услышать вас.</p>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <div class="contact-container">
+                <h2 style="text-align: center; color: var(--accent); margin-bottom: 2rem;">Напишите нам сообщение</h2>
+                
+                <!-- ФОРМА: замените action на свой endpoint -->
+                <form action="https://formcarry.com/s/ВАШ_УНИКАЛЬНЫЙ_ИДЕНТИФИКАТОР" method="POST" accept-charset="UTF-8">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Андрей Минаев" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email для ответа *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject" class="form-control">
+                            <option value="Вопрос по психологии цвета">Вопрос по психологии цвета</option>
+                            <option value="Предложение о сотрудничестве">Предложение о сотрудничестве</option>
+                            <option value="Отзыв о сайте">Отзыв о сайте</option>
+                            <option value="Техническая проблема">Техническая проблема</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Опишите ваш вопрос или предложение..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Отправить сообщение
+                    </button>
+                    <p style="font-size:0.9rem; color:#666; margin-top:1rem;">* Обязательные для заполнения поля</p>
+                </form>
+
+                <div class="contact-info">
+                    <h3 style="color: var(--accent); text-align: center; margin-bottom: 2rem;">Другие способы связи</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>colors.emotions@example.com</p>
+                            <p>Ответ в течение 24-48 часов</p>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-users"></i>
+                            <h4>О проекте</h4>
+                            <p>Андрей Минаев (разработка)</p>
+                            <p>Софья Бурханова (цвет и психология)</p>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-info-circle"></i>
+                            <h4>Образовательный проект</h4>
+                            <p>Информация предоставлена в образовательных целях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colors&Emotions</h3>
+                    <p>Исследуем глубокую связь между цветами и человеческими эмоциями.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Страницы</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="index.html#colors">Цвета и эмоции</a></li>
+                        <li><a href="index.html#goethe">Теория Гёте</a></li>
+                        <li><a href="index.html#test">Пройти тест</a></li>
+                        <li><a href="culture.html">Культура цвета</a></li>
+                        <li><a href="article.html">Статья</a></li>
+                        <li><a href="contact.html">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE_%D1%86%D0%B2%D0%B5%D1%82%D0%B5" target="_blank">Книга Гёте</a></li>
+                        <li><a href="https://www.verywellmind.com/color-psychology-2795824" target="_blank">Основы цветопсихологии</a></li>
+                        <li><a href="https://www.color-meanings.com/" target="_blank">Значения цветов</a></li>
+                        <li><a href="https://quizlet.com/" target="_blank">Платформа Quizlet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Colors&Emotions. Все права защищены.</p>
+                <p>Создатели: Андрей Минаев, Софья Бурханова</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
